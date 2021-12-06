@@ -1,3 +1,3 @@
 # commit-message-checker-test
 
-Test message
+Test message added

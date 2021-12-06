@@ -20,11 +20,11 @@ jobs:
 #       - name : Check Message
 #         run: echo ${{ steps.get-pr-commits.outputs.commits }}
           
-      - name: Check Fixes
+      - name: Check Witems
         if: ${{ success() || failure() }}
         uses: tim-actions/commit-message-checker-with-regex@v0.3.1
         with:
           commits: ${{ steps.get-pr-commits.outputs.commits }}
-          pattern: '[a-z]+\d@example\.com'
-          error: 'No "Fixes" found'
+          pattern: '^.+(AB): \#[0-9]+$'
+          error: 'No Work Items are linked'
           one_pass_all_pass: 'true'

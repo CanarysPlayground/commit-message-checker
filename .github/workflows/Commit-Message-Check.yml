@@ -28,3 +28,4 @@ jobs:
           commits: ${{ steps.get-pr-commits.outputs.commits }}
           pattern: 'AB\#[0-9]+'
           error: 'No Work Items are linked'
+          one_pass_all_pass: 'true'

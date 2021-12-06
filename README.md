@@ -1,1 +1,2 @@
-# commit-message-checker
+# commit-message-checker.
+Test line 1

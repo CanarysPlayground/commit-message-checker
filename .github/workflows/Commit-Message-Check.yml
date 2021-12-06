@@ -16,7 +16,7 @@ jobs:
         id: 'get-pr-commits'
         uses: tim-actions/get-pr-commits@master
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.TOKEN }}
 
       - name: Check Subject Line Length
         uses: tim-actions/commit-message-checker-with-regex@v0.3.1

@@ -4,3 +4,4 @@ Test message added
 Message added new
 
 AB#12345
+AB#1234

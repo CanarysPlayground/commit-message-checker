@@ -16,8 +16,7 @@ jobs:
         id: 'get-pr-commits'
         uses: tim-actions/get-pr-commits@master
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
+          token: ${{ secrets.TOKEN }}
 #       - name : Check Message
 #         run: echo ${{ steps.get-pr-commits.outputs.commits }}
           
